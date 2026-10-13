@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="UNIQUE Photography Studio in Masaka, Kigali, Rwanda. Wedding, birthday, portrait and event photography.">
+<title>UNIQUE Photography Studio | Kigali, Rwanda</title>
+<style>
+:root{--gold:#d8b45a;--gold-light:#f2d98d;--bg:#0b0b0c;--panel:#151517;--text:#f8f6f0;--muted:#b9b7b1}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:82px}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1120px,91%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(8,8,9,.95);backdrop-filter:blur(12px);border-bottom:1px solid #292827}
+.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font-weight:900;letter-spacing:2px;font-size:1.12rem}.brand span{color:var(--gold)}
+nav{display:flex;align-items:center;gap:20px;flex-wrap:wrap}nav a{font-size:.91rem;color:#e7e4dc}nav a:hover{color:var(--gold)}
+.menu-btn{display:none;background:none;color:white;border:1px solid #555;padding:7px 10px;border-radius:5px}
+.hero{min-height:76vh;display:grid;place-items:center;text-align:center;background:linear-gradient(90deg,rgba(0,0,0,.82),rgba(0,0,0,.43)),url('https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=2000&q=85') center/cover}
+.hero-content{padding:80px 0;max-width:820px}.eyebrow{color:var(--gold-light);text-transform:uppercase;letter-spacing:4px;font-size:.78rem;font-weight:bold}
+h1{font-size:clamp(2.5rem,7vw,5.4rem);line-height:1.08;margin:18px 0}h1 span{color:var(--gold)}
+.hero p{max-width:640px;margin:0 auto 26px;color:#eee;font-size:1.1rem}
+.btn{display:inline-block;background:var(--gold);color:#111;font-weight:800;padding:12px 21px;border-radius:4px;border:1px solid var(--gold);margin:5px;transition:.2s;cursor:pointer}
+.btn:hover{background:var(--gold-light);transform:translateY(-2px)}.btn-outline{background:transparent;color:var(--text);border-color:#aaa}
+section{padding:78px 0}.section-head{text-align:center;max-width:720px;margin:0 auto 34px}.section-head h2{font-size:clamp(1.8rem,4vw,2.7rem);margin:7px 0 12px}.section-head p,.muted{color:var(--muted)}
+.gold{color:var(--gold)}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center}
+.about-image{min-height:370px;border-radius:8px;background:url('https://images.unsplash.com/photo-1520390138845-fd2d229dd553?auto=format&fit=crop&w=1200&q=85') center/cover}
+.about-copy h2{font-size:2.25rem;line-height:1.2;margin:8px 0 18px}.about-copy p{color:var(--muted);margin-bottom:14px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--panel);border:1px solid #29282a;border-radius:8px;padding:25px}.card .icon{font-size:1.8rem}.card h3{margin:9px 0;color:var(--gold-light)}.card p{color:var(--muted);font-size:.95rem}
+#gallery{background:#101011}.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
+.gallery figure{height:270px;overflow:hidden;border-radius:7px;background:#222;position:relative}
+.gallery img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s}
+.gallery figure:hover img{transform:scale(1.06)}.gallery figcaption{position:absolute;bottom:0;left:0;right:0;padding:35px 14px 12px;background:linear-gradient(transparent,rgba(0,0,0,.85));font-weight:bold}
+.note{font-size:.86rem;color:#aaa;margin-top:18px;text-align:center}
+.pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:stretch}
+.price-card{background:var(--panel);border:1px solid #34312a;padding:28px;border-radius:8px;display:flex;flex-direction:column}
+.price-card.featured{border:1px solid var(--gold);box-shadow:0 0 25px #d8b45a16}
+.price-card h3{font-size:1.3rem}.price{font-size:1.7rem;color:var(--gold);font-weight:900;margin:10px 0}.price-card p{color:var(--muted);font-size:.92rem}.price-card ul{padding:16px 0 22px 18px;color:#e4e1d9;flex:1}.price-card li{margin:7px 0}.price-card .btn{align-self:flex-start}
+.booking{background:linear-gradient(120deg,#181715,#0b0b0c)}
+.booking-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:35px;align-items:start}
+.booking-info h2{font-size:2.25rem;line-height:1.2;margin:10px 0 18px}.booking-info p{color:var(--muted);margin-bottom:13px}
+form{background:var(--panel);border:1px solid #333;padding:25px;border-radius:8px}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+label{display:block;font-size:.88rem;color:#e9e4d7;margin-bottom:5px}
+input,select,textarea{width:100%;padding:12px;border-radius:4px;background:#0c0c0d;color:white;border:1px solid #454347;font:inherit}
+textarea{min-height:100px;resize:vertical}.full{grid-column:1/-1}.form-help{font-size:.82rem;color:#aaa;margin:10px 0}
+.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.contact-item{padding:22px;background:var(--panel);border-radius:7px;border:1px solid #29282a}.contact-item h3{color:var(--gold);margin-bottom:5px}
+footer{border-top:1px solid #29282a;padding:25px 0;color:#aaa;font-size:.9rem}.footer-row{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.socials{display:flex;gap:14px;flex-wrap:wrap}.socials a{color:var(--gold-light)}
+@media(max-width:800px){.menu-btn{display:block}nav{display:none;width:100%;padding:0 0 16px;flex-direction:column;align-items:flex-start}nav.open{display:flex}.nav{flex-wrap:wrap;padding:15px 0}.about-grid,.booking-grid{grid-template-columns:1fr}.cards,.pricing{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:1fr 1fr}.contact-grid{grid-template-columns:1fr}}
+@media(max-width:520px){section{padding:56px 0}.cards,.pricing,.gallery{grid-template-columns:1fr}.gallery figure{height:290px}.fields{grid-template-columns:1fr}.full{grid-column:auto}.hero{min-height:68vh}.about-image{min-height:280px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home">UNIQUE <span>PHOTOGRAPHY</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open navigation" aria-expanded="false">☰ Menu</button>
+    <nav id="navLinks">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a>
+      <a href="#gallery">Gallery</a><a href="#prices">Packages</a><a href="#booking">Booking</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="wrap hero-content">
+    <div class="eyebrow">Masaka · Kigali · Rwanda</div>
+    <h1>Your Moments.<br><span>Our Art.</span></h1>
+    <p>We capture your most meaningful moments and turn them into timeless memories through creative photography and careful editing.</p>
+    <a class="btn" href="#gallery">Explore Our Work</a>
+    <a class="btn btn-outline" href="#booking">Book a Session</a>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="about-image" role="img" aria-label="Camera used for photography"></div>
+    <div class="about-copy">
+      <div class="eyebrow">A little about us</div>
+      <h2>Every picture tells <span class="gold">your story.</span></h2>
+      <p>Welcome to UNIQUE Photography Studio, based in Masaka, Kigali, Rwanda. We believe every important moment deserves to be remembered beautifully.</p>
+      <p>From weddings and birthdays to portraits and special events, our goal is to create photographs that feel natural, meaningful, and uniquely yours.</p>
+      <a class="btn" href="#contact">Talk to the Studio</a>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="section-head"><div class="eyebrow">What we do</div><h2>Our <span class="gold">Services</span></h2><p>Photography for your milestones, celebrations, and everyday achievements.</p></div>
+    <div class="cards">
+      <article class="card"><div class="icon">💍</div><h3>Wedding Photography</h3><p>Beautiful coverage of your ceremony, couple portraits, family, and unforgettable moments.</p></article>
+      <article class="card"><div class="icon">🎂</div><h3>Birthday Photography</h3><p>Creative portraits and event coverage to keep your birthday memories alive.</p></article>
+      <article class="card"><div class="icon">📸</div><h3>Portrait Photography</h3><p>Individual, couple, family, and professional portraits with thoughtful lighting.</p></article>
+      <article class="card"><div class="icon">🎉</div><h3>Event Photography</h3><p>Coverage for celebrations, ceremonies, parties, and community events.</p></article>
+      <article class="card"><div class="icon">🖼️</div><h3>Photo Editing</h3><p>Careful color correction, retouching, and finishing to bring out the best in your images.</p></article>
+      <article class="card"><div class="icon">🖨️</div><h3>Photo Prints</h3><p>Ask us about photo printing and other photography-related services available at the studio.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <div class="section-head"><div class="eyebrow">Selected moments</div><h2>Our <span class="gold">Gallery</span></h2><p>A preview of the style and stories you can explore with UNIQUE Photography.</p></div>
+    <div class="gallery">
+      <figure><img loading="lazy" src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=85" alt="Wedding couple"><figcaption>Wedding Stories</figcaption></figure>
+      <figure><img loading="lazy" src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=900&q=85" alt="Wedding celebration"><figcaption>Celebrations</figcaption></figure>
+      <figure><img loading="lazy" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=900&q=85" alt="Portrait of a woman"><figcaption>Portraits</figcaption></figure>
+      <figure><img loading="lazy" src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=900&q=85" alt="Event table and decor"><figcaption>Special Events</figcaption></figure>
+      <figure><img loading="lazy" src="https://images.unsplash.com/photo-1529636798458-92182e662485?auto=format&fit=crop&w=900&q=85" alt="Couple outdoors"><figcaption>Couple Sessions</figcaption></figure>
+      <figure><img loading="lazy" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=85" alt="Portrait in natural light"><figcaption>Creative Portraits</figcaption></figure>
+    </div>
+    <p class="note">These are sample images for the template. Replace them with your own photographs before publishing.</p>
+  </div>
+</section>
+
+<section id="prices">
+  <div class="wrap">
+    <div class="section-head"><div class="eyebrow">Choose what fits you</div><h2>Photography <span class="gold">Packages</span></h2><p>Prices below are placeholders. Contact us for a quote based on your date, location, and requirements.</p></div>
+    <div class="pricing">
+      <article class="price-card"><h3>Portrait Session</h3><div class="price">Request a quote</div><p>For individuals, couples, or small family portraits.</p><ul><li>Planned photo session</li><li>Guided posing</li><li>Edited digital photos</li></ul><a class="btn" href="#booking" data-package="Portrait Session">Choose Package</a></article>
+      <article class="price-card featured"><h3>Birthday & Events</h3><div class="price">Request a quote</div><p>For birthdays, parties, and special occasions.</p><ul><li>Event coverage</li><li>Edited photo selection</li><li>Digital delivery</li></ul><a class="btn" href="#booking" data-package="Birthday & Events">Choose Package</a></article>
+      <article class="price-card"><h3>Wedding Package</h3><div class="price">Request a quote</div><p>Photography coverage for your special day.</p><ul><li>Coverage planned with you</li><li>Couple and family portraits</li><li>Edited digital photos</li></ul><a class="btn" href="#booking" data-package="Wedding Package">Choose Package</a></article>
+    </div>
+  </div>
+</section>
+
+<section class="booking" id="booking">
+  <div class="wrap booking-grid">
+    <div class="booking-info">
+      <div class="eyebrow">Let's plan your session</div>
+      <h2>Book your moment with <span class="gold">UNIQUE.</span></h2>
+      <p>Fill in the form and it will prepare a booking message for WhatsApp. You can review it and send it to the studio.</p>
+      <p>To confirm a booking, we will discuss availability, location, package details, and any deposit directly with you.</p>
+      <p class="muted">Location: Masaka, Kigali, Rwanda</p>
+    </div>
+    <form id="bookingForm">
+      <div class="fields">
+        <div><label for="name">Your name *</label><input id="name" name="name" required placeholder="Full name"></div>
+        <div><label for="phone">Your phone *</label><input id="phone" name="phone" required placeholder="+250..." inputmode="tel"></div>
+        <div><label for="service">Service *</label><select id="service" name="service" required><option value="">Choose a service</option><option>Wedding Photography</option><option>Birthday Photography</option><option>Portrait Photography</option><option>Event Photography</option><option>Photo Editing</option><option>Photo Prints</option></select></div>
+        <div><label for="date">Preferred date</label><input id="date" name="date" type="date"></div>
+        <div class="full"><label for="location">Event/session location</label><input id="location" name="location" placeholder="e.g. Masaka, Kigali"></div>
+        <div class="full"><label for="details">More details</label><textarea id="details" name="details" placeholder="Tell us what you need, number of people, event time, etc."></textarea></div>
+        <div class="full"><button class="btn" type="submit">Prepare WhatsApp Booking</button><p class="form-help">This form opens WhatsApp; it does not send your information automatically.</p></div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="section-head"><div class="eyebrow">We'd love to hear from you</div><h2>Contact <span class="gold">UNIQUE</span></h2><p>Let's create something memorable together.</p></div>
+    <div class="contact-grid">
+      <div class="contact-item"><h3>📍 Location</h3><p>Masaka, Kigali, Rwanda</p></div>
+      <div class="contact-item"><h3>💬 WhatsApp</h3><p>Message us to ask about dates and packages.</p><a class="gold" id="contactWhatsApp" href="https://wa.me/250781507228" target="_blank" rel="noopener">Chat on WhatsApp ↗</a></div>
+      <div class="contact-item"><h3>📱 Social Media</h3><p>Follow our latest work and updates.</p><div class="socials"><a id="instagramLink" href="#" target="_blank" rel="noopener">Instagram ↗</a><a id="facebookLink" href="#" target="_blank" rel="noopener">Facebook ↗</a></div></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap footer-row"><p>© <span id="year"></span> UNIQUE Photography Studio. All rights reserved.</p><p>Your Memories, Our Passion.</p></div></footer>
+
+<script>
+/*
+  BEFORE PUBLISHING:
+  1) Replace 250700000000 with your real WhatsApp number, including country code, digits only.
+  2) Replace the Instagram and Facebook URLs below with your actual profile links.
+  3) Replace sample gallery photos with your own work.
+  4) Update the package prices if you want to show fixed prices.
+*/
+const STUDIO_WHATSAPP = "250781507228";
+const INSTAGRAM_URL = "https://www.instagram.com/uniquephotographer/";
+const FACEBOOK_URL = "https://www.facebook.com/uniquephotographer/";
+
+document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById("contactWhatsApp").href = "https://wa.me/" + STUDIO_WHATSAPP;
+document.getElementById("instagramLink").href = INSTAGRAM_URL;
+document.getElementById("facebookLink").href = FACEBOOK_URL;
+
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
+menuBtn.addEventListener("click", () => {
+  const isOpen = navLinks.classList.toggle("open");
+  menuBtn.setAttribute("aria-expanded", String(isOpen));
+});
+navLinks.querySelectorAll("a").forEach(link => link.addEventListener("click", () => {
+  navLinks.classList.remove("open");
+  menuBtn.setAttribute("aria-expanded", "false");
+}));
+
+document.querySelectorAll("[data-package]").forEach(link => {
+  link.addEventListener("click", () => {
+    const service = link.dataset.package;
+    const select = document.getElementById("service");
+    const match = [...select.options].find(o => o.text.toLowerCase().includes(service.split(" ")[0].toLowerCase()));
+    if (service.includes("Birthday")) select.value = "Birthday Photography";
+    else if (service.includes("Wedding")) select.value = "Wedding Photography";
+    else if (service.includes("Portrait")) select.value = "Portrait Photography";
+  });
+});
+
+document.getElementById("bookingForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+  if (STUDIO_WHATSAPP === "250781507228") {
+    alert("Please edit the code and replace the example WhatsApp number with your real number before using the booking form.");
+    return;
+  }
+  const data = new FormData(this);
+  const message = [
+    "Hello UNIQUE Photography Studio! I would like to make a booking.",
+    "",
+    "Name: " + (data.get("name") || ""),
+    "Phone: " + (data.get("phone") || ""),
+    "Service: " + (data.get("service") || ""),
+    "Preferred date: " + (data.get("date") || "Not specified"),
+    "Location: " + (data.get("location") || "Not specified"),
+    "Details: " + (data.get("details") || "None")
+  ].join("\n");
+  window.open("https://wa.me/" + STUDIO_WHATSAPP + "?text=" + encodeURIComponent(message), "_blank", "noopener");
+});
+</script>
+</body>
+</html>
